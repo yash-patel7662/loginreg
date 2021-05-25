@@ -24,6 +24,6 @@ module.exports = function (sequelize, DataTypes) {
     }, {
         freezeTableName: true
     })
-    Employee.belongTo(User, { as: "user" })
-    return Employee;
+    return Employee.belongsTo(User, { as: "user" })
+    // return Employee;
 }
